@@ -1,0 +1,28 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<ui:composition template="/template.xhtml">
+<ui:define name="conteudo">
+	<h:form>
+		<h:panelGrid>
+			<h:outputLabel value="Quantidade total de números:" />
+			<h:inputText value="#{geradorDeApostasBean.quantidadeDeNumeros}" />
+
+			<h:outputLabel value="Quantidade de números por aposta:" />
+			<h:inputText value="#{geradorDeApostasBean.tamanhoDaAposta}" />
+
+			<h:outputLabel value="Quantidade de apostas:" />
+			<h:inputText value="#{geradorDeApostasBean.quantidadeDeApostas}" />
+
+			<h:commandButton action="#{geradorDeApostasBean.geraApostas}"
+				value="Gerar" />
+		</h:panelGrid>
+	</h:form>
+	</ui:define>
+</ui:composition>
+</html>

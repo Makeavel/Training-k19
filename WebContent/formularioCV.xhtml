@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<ui:composition template="/template.xhtml">
+<ui:define name="conteudo">
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputLabel value="Nome: " for="input-nome" />
+			<h:inputText id="input-nome" />
+
+			<h:outputLabel value="Sobre: " for="input-sobre" />
+			<h:inputTextarea id="input-sobre" />
+
+			<h:outputLabel value="Sexo: " />
+			<h:selectOneRadio>
+				<f:selectItem itemLabel="Masculino" itemValue="M" />
+				<f:selectItem itemLabel="Feminino" itemValue="F" />
+			</h:selectOneRadio>
+
+			<h:outputLabel value="País: " />
+			<h:selectOneMenu>
+				<f:selectItem itemLabel="Argertina" itemValue="ar" />
+				<f:selectItem itemLabel="Brasil" itemValue="br" />
+				<f:selectItem itemLabel="Espanha" itemValue="es" />
+			</h:selectOneMenu>
+
+			<h:outputLabel value="Escolha uma senha: " for="input-senha" />
+			<h:inputSecret id="input-senha" />
+
+			<h:outputLabel value="Li e concordo." for="checkbox-termo" />
+			<h:selectBooleanCheckbox id="checkbox-termo" value="aceito" />
+
+			<h:commandButton value="Cadastrar" />
+		</h:panelGrid>
+	</h:form>
+	</ui:define>
+</ui:composition>
+</html>

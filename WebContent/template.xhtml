@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>K19 - Cyberpunk</title>
+</h:head>
+<h:body>
+	<div id="header">
+		<img  src="Cyberpunk_2077.png" />
+		<hr />
+	</div>
+
+	<ui:insert name="conteudo"> 
+	
+	<!-- img src="k19-logo.png" /--> 
+	<h:form>
+ 		<h:commandLink value="formulario" action="formulario"/>
+ 		<br/>
+ 		<h:commandLink value="Listagem Instrutores" action="listagem-de-instrutores"/>
+ 		<br/>
+ 		<h:commandLink value="palavras" action="palavras"/>
+ 		<br/>
+ 		<h:commandLink value="teste template" action="teste-template"/>
+ 		<br/>
+ 		<h:commandLink value="formularioCV" action="formularioCV"/>
+ 		<br/>
+ 		<h:commandLink value="pagina1" action="pagina1"/>
+ 		<br/>
+ 		<h:commandLink value="cara ou coroa" action="cara-ou-coroa"/>
+ 		<br/>
+ 		<h:commandLink value="impostometro" action="impostometro"/>
+ 		<br/>
+ 		<h:commandLink value="Calcula imposto" action="calculaImposto"/>
+ 		<br/>
+	 </h:form>
+	 
+	 </ui:insert>
+	
+	<div id="footer" style="text-align: center">
+		<hr />
+		&copy; 2077 NightCity. Todos os bugs reservados.
+	</div>
+</h:body>
+</html>
